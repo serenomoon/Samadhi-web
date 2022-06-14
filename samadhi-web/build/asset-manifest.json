@@ -1,0 +1,32 @@
+{
+  "files": {
+    "main.css": "/static/css/main.c0c74754.css",
+    "main.js": "/static/js/main.39623331.js",
+    "static/media/fondo-home.jpg": "/static/media/fondo-home.c613c3c8bbec7cd56dc8.jpg",
+    "static/media/facilitador2.jpg": "/static/media/facilitador2.12b8bce80e5f5fe3d994.jpg",
+    "static/media/julieta.jpg": "/static/media/julieta.ebfd5cb257b45f2ae814.jpg",
+    "static/media/stretch3.png": "/static/media/stretch3.8be78f95d4ee77137598.png",
+    "static/media/stretch.png": "/static/media/stretch.1bc9de7c563a6004104b.png",
+    "static/media/stretch2.png": "/static/media/stretch2.71675848626402f2836d.png",
+    "static/media/facilitador4.jpg": "/static/media/facilitador4.013e8363a55059563ba5.jpg",
+    "static/media/clasesexample5.jpg": "/static/media/clasesexample5.ef1079a16e298eb92777.jpg",
+    "static/media/facilitador6.jpg": "/static/media/facilitador6.9a151acc8c357b04d736.jpg",
+    "static/media/facilitador1.jpg": "/static/media/facilitador1.323cefb1d7173ee3e79f.jpg",
+    "static/media/clasesexample2.jpg": "/static/media/clasesexample2.dace23498b57f2251b6c.jpg",
+    "static/media/clasesexample1.jpg": "/static/media/clasesexample1.fbe199e2b145bb0e333c.jpg",
+    "static/media/news.jpg": "/static/media/news.72e3f34a70e25449c9ed.jpg",
+    "static/media/clasesexample4.jpg": "/static/media/clasesexample4.5131e0a1cee10c20088e.jpg",
+    "static/media/facilitador5.jpg": "/static/media/facilitador5.4ce1b7b45a9966da6a7c.jpg",
+    "static/media/clasesexample3.jpg": "/static/media/clasesexample3.8dd4c866a104d222f8e8.jpg",
+    "static/media/clases.jpg": "/static/media/clases.b2e04cf0bd5fb0c95ddc.jpg",
+    "static/media/facilitador3.jpg": "/static/media/facilitador3.933afd1ee724b0379707.jpg",
+    "static/media/logo.png": "/static/media/logo.e545f570b2dc79becef5.png",
+    "index.html": "/index.html",
+    "main.c0c74754.css.map": "/static/css/main.c0c74754.css.map",
+    "main.39623331.js.map": "/static/js/main.39623331.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.c0c74754.css",
+    "static/js/main.39623331.js"
+  ]
+}
