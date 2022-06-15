@@ -1,9 +1,9 @@
 import { BrowserRouter } from "react-router-dom";
 import { Routes, Route } from "react-router-dom";
-import { Private } from "../components/private/Private";
 import ScrollToTop from "../helpers/ScrollToTop";
 import { AuthRouter } from "./AuthRouter";
 import { DashboardRoutes } from "./DashboardRoutes";
+import { DataRoutes } from "./DataRoutes";
 import { PrivateRoute } from "./PrivateRoute";
 import { PublicRoute } from "./PublicRoute";
 
@@ -26,9 +26,9 @@ export const AppRouter = () => {
               } 
           />
   
-          <Route path="/alumnos" element={
+          <Route path="/data/*" element={
                 <PrivateRoute>
-                  <Private />
+                  <DataRoutes />
                 </PrivateRoute>
               } 
           />

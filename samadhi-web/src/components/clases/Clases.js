@@ -24,7 +24,7 @@ export const Clases = () => {
                               <h5 className="card-title clases__card-title">Card title</h5>
                               <p className="card-text clases__card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
                               <Link to='/clasesmas' style={{textDecoration: 'none'}}>
-                                <button className='btn'>VER MAS</button>
+                                <button className='btn btn-green'>VER MAS</button>
                               </Link>
                           </div>
                       </div>
@@ -37,7 +37,7 @@ export const Clases = () => {
                               <h5 className="card-title clases__card-title">Card title</h5>
                               <p className="card-text clases__card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
                               <Link to='/clasesmas' style={{textDecoration: 'none'}}>
-                                <button className='btn'>VER MAS</button>
+                                <button className='btn btn-green'>VER MAS</button>
                               </Link>
                           </div>
                       </div>
@@ -50,7 +50,7 @@ export const Clases = () => {
                               <h5 className="card-title clases__card-title">Card title</h5>
                               <p className="card-text clases__card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
                               <Link to='/clasesmas' style={{textDecoration: 'none'}}>
-                                <button className='btn'>VER MAS</button>
+                                <button className='btn btn-green'>VER MAS</button>
                               </Link>
                           </div>
                       </div>
@@ -63,7 +63,7 @@ export const Clases = () => {
                               <h5 className="card-title clases__card-title">Card title</h5>
                               <p className="card-text clases__card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
                               <Link to='/clasesmas' style={{textDecoration: 'none'}}>
-                                <button className='btn'>VER MAS</button>
+                                <button className='btn btn-green'>VER MAS</button>
                               </Link>
                           </div>
                       </div>
@@ -76,7 +76,7 @@ export const Clases = () => {
                               <h5 className="card-title clases__card-title">Card title</h5>
                               <p className="card-text clases__card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
                               <Link to='/clasesmas' style={{textDecoration: 'none'}}>
-                                <button className='btn'>VER MAS</button>
+                                <button className='btn btn-green'>VER MAS</button>
                               </Link>
                           </div>
                       </div>
@@ -89,7 +89,7 @@ export const Clases = () => {
                               <h5 className="card-title clases__card-title">Card title</h5>
                               <p className="card-text clases__card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
                               <Link to='/clasesmas' style={{textDecoration: 'none'}}>
-                                <button className='btn'>VER MAS</button>
+                                <button className='btn btn-green'>VER MAS</button>
                               </Link>
                           </div>
                       </div>

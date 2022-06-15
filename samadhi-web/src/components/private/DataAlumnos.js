@@ -1,12 +1,12 @@
 import React from 'react'
 import { HomeNav } from '../ui/HomeNav'
 
-export const Private = () => {
+export const DataAlumnos = () => {
   return (
     <>
       <HomeNav />
       <div>
-          <h1>Private</h1>
+        <h1>DataAlumnos</h1>
       </div>
     </>
   )

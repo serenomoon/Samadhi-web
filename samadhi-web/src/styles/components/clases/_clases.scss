@@ -45,12 +45,5 @@
 .clases__card button {
     display: block;
     margin: 0 auto;
-    font-size: 1vw;
     padding: 1vh 2vw;
-    color: $primary;
-    background-color: lighten($color: $primary, $amount: 50);
-
-    &:hover {
-        color: darken($color: $primary, $amount: 10);
-    }
 }

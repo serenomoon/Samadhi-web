@@ -42,6 +42,18 @@
     }
 }
 
+.btn-red {
+    margin: 0 auto;
+    font-size: 1vw;
+    padding: 1vh 2vw;
+    color: $red;
+    background-color: lighten($color: $red, $amount: 50);
+
+    &:hover {
+        color: darken($color: $red, $amount: 10);
+    }
+}
+
 
 .btn-menu {
     font-family: 'Open Sans', sans-serif;

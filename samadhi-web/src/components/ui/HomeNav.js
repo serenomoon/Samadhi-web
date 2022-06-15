@@ -1,10 +1,13 @@
-import React, { useContext } from 'react'
+import React, { useContext, useState } from 'react'
 import { Link, NavLink, useNavigate } from 'react-router-dom'
 import { AuthContext } from '../../auth/authContext';
 import { types } from '../../types/types';
+import { NavDropdown } from 'react-bootstrap';
 
 export const HomeNav = () => {
 
+    const [show, setShow] = useState(false);
+    
     const { user, dispatch } = useContext(AuthContext);
     
     const navigate = useNavigate();
@@ -19,7 +22,6 @@ export const HomeNav = () => {
             replace: true
           });
     }
-
 
 
 
@@ -67,14 +69,26 @@ export const HomeNav = () => {
                 </li>
 
                 {user.logged ? 
-                    <li className="list-inline-item">
-                        <NavLink 
-                                className={ ({ isActive }) => 'nav-link navbar__link' + (isActive ? 'active' : '') } 
-                                to="/alumnos"
-                            >
-                                Alumnos
-                        </NavLink>                    
-                    </li>
+                    // <li className="list-inline-item">
+                    //     <NavLink 
+                    //             className={ ({ isActive }) => 'nav-link navbar__link' + (isActive ? 'active' : '') } 
+                    //             to="/alumnos"
+                    //         >
+                    //             Alumnos
+                    //     </NavLink>                    
+                    // </li>
+                    
+                    <NavDropdown title="Datos" id="nav-dropdown" 
+                        show={show}
+                        onMouseEnter={() => setShow(true)}
+                        onMouseLeave={() => setShow(false)}
+                    >
+                        <NavDropdown.Item><Link to="/data/clases">Clases</Link></NavDropdown.Item>
+                        <NavDropdown.Item><Link to="/data/noticias">Noticias</Link></NavDropdown.Item>
+                        <NavDropdown.Divider />
+                        <NavDropdown.Item><Link to="/data/facilitadores">Facilitadores</Link></NavDropdown.Item>
+                        <NavDropdown.Item><Link to="/data/alumnos">Alumnos</Link></NavDropdown.Item>
+                    </NavDropdown>
 
                 :<></>}
 

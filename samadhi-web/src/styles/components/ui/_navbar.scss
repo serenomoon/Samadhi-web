@@ -43,5 +43,24 @@
     font-weight: 800;
 }
 
+.dropdown-toggle::after {
+    display: none !important; 
+  }
+
+
+.dropdown-item a {
+    text-decoration: none;
+    color: black;
+}  
+
+.dropdown-item {
+    &:hover{
+        background-color: $light-green;
+    }
+    &:focus{
+        background-color: $primary;
+    }
+} 
+
 
 

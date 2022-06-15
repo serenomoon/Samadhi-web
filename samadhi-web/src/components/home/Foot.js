@@ -47,7 +47,7 @@ export const Foot = () => {
                 </li>
                 <li>Showroom en Punta Alta</li>
                 <li>+54 9 2932 440-534</li>
-                <li>luxstudioyoga@gmail.com</li>
+                <li>samadhi@gmail.com</li>
               </ul>
 
               <ul>
