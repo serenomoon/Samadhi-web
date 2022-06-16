@@ -1,2 +1,2 @@
 release: python manage.py migrate
-web: gunicorn profilepage.wsgi
+web: gunicorn samadhidb.wsgi
