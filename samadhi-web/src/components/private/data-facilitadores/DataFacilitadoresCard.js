@@ -12,7 +12,7 @@ export const DataFacilitadoresCard = ({facilitadores}) => {
                     <h5 className="card-title clases__card-title">Card title</h5>
                     <p className="card-text clases__card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
                     <div className="card-text datanoticias__card-buttons">
-                        <Link to='/news' style={{textDecoration: 'none'}}>
+                        <Link to='/data/facilitadores-ver' style={{textDecoration: 'none'}}>
                           <button className='btn btn-green'>VER</button>
                         </Link>
                         {facilitadores === true 
