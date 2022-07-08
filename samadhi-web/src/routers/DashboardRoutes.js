@@ -1,11 +1,11 @@
 import { Navigate, Route, Routes } from "react-router-dom";
 import { Home } from "../components/home/Home";
-import { News } from "../components/home/News";
+import { Noticias } from "../components/noticias/Noticias";
 import { Clases } from "../components/clases/Clases";
-import { About } from "../components/about/About";
+import { Facilitadores } from "../components/facilitadores/Facilitadores";
 import { Contacto } from "../components/home/Contacto";
 import { ClasesMas } from "../components/clases/ClasesMas";
-import { Facilitador } from "../components/about/Facilitador";
+import { Facilitador } from "../components/facilitadores/Facilitador";
 
 
 export const DashboardRoutes = () => {
@@ -13,14 +13,19 @@ export const DashboardRoutes = () => {
     <>
       <Routes>
          <Route path="/" element={<Home />} />
-         <Route path="clases" element={<Clases />} />
-         <Route path="about" element={<About />} />
-         <Route path="contacto" element={<Contacto />} />
-         <Route path="news" element={<News />} />
-         <Route path="clasesmas" element={<ClasesMas />} />
-         <Route path="facilitador" element={<Facilitador />} />
 
-         <Route path="/*" element={<Navigate to="/" replace />} />
+         <Route path="facilitadores" element={<Facilitadores />} />
+         <Route path="facilitador/:id" element={<Facilitador />} />
+
+         <Route path="clases" element={<Clases />} />
+         <Route path="clase/:id" element={<ClasesMas />} />
+
+         <Route path="noticias/:id" element={<Noticias />} />
+         
+         <Route path="contacto" element={<Contacto />} />
+         
+
+         {/* <Route path="/*" element={<Navigate to="/" replace />} /> */}
        </Routes>
     </>
   )

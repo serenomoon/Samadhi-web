@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/static/css/main.3dfd8d43.css",
-    "main.js": "/static/js/main.9fa0f6c0.js",
+    "main.css": "/static/css/main.99b2cd2d.css",
+    "main.js": "/static/js/main.cbe00c5a.js",
     "static/media/fondo-home.jpg": "/static/media/fondo-home.c613c3c8bbec7cd56dc8.jpg",
     "static/media/facilitador2.jpg": "/static/media/facilitador2.12b8bce80e5f5fe3d994.jpg",
     "static/media/julieta.jpg": "/static/media/julieta.ebfd5cb257b45f2ae814.jpg",
@@ -21,12 +21,13 @@
     "static/media/clases.jpg": "/static/media/clases.b2e04cf0bd5fb0c95ddc.jpg",
     "static/media/facilitador3.jpg": "/static/media/facilitador3.933afd1ee724b0379707.jpg",
     "static/media/logo.png": "/static/media/logo.e545f570b2dc79becef5.png",
+    "static/media/logo.svg": "/static/media/logo.010d4c07f38382ae9e1f.svg",
     "index.html": "/index.html",
-    "main.3dfd8d43.css.map": "/static/css/main.3dfd8d43.css.map",
-    "main.9fa0f6c0.js.map": "/static/js/main.9fa0f6c0.js.map"
+    "main.99b2cd2d.css.map": "/static/css/main.99b2cd2d.css.map",
+    "main.cbe00c5a.js.map": "/static/js/main.cbe00c5a.js.map"
   },
   "entrypoints": [
-    "static/css/main.3dfd8d43.css",
-    "static/js/main.9fa0f6c0.js"
+    "static/css/main.99b2cd2d.css",
+    "static/js/main.cbe00c5a.js"
   ]
 }

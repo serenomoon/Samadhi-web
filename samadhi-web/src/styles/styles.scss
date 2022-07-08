@@ -7,15 +7,17 @@
 @import './components/links';
 
 @import './components/ui/navbar';
+@import './components/ui/loading';
 
 @import './components/login/auth';
 
 @import './components/home/home';
 @import './components/home/clasescall';
-@import './components/home/cardnews';
-@import './components/home/news';
 @import './components/home/foot';
 @import './components/home/contacto';
+
+@import './components/noticias/noticiascard';
+@import './components/noticias/noticias';
 
 @import './components/about/about';
 @import './components/about/facilitador';

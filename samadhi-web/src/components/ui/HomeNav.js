@@ -53,9 +53,9 @@ export const HomeNav = () => {
                 <li className="list-inline-item">
                     <NavLink 
                             className={ ({ isActive }) => 'nav-link navbar__link' + (isActive ? 'active' : '') } 
-                            to="/about"
+                            to="/facilitadores"
                         >
-                            About
+                            Facilitadores
                     </NavLink>                    
                 </li>
 
