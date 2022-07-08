@@ -6,15 +6,11 @@ const axios = require('axios');
 
 export const DataAlumnosPanelList = ({trashoption,handleDeleteProperty,data}) => {
 
-    if (Object.keys(data).length === 0) {
-
-      return <img src={ yogaImages(`./logo.svg`) } className="loading__loading img-fluid animate__animated animate__flash" alt='logo'/>;
-
-    } else {
         
     return (
         <>
-        {data.map((alumno) => {
+        {Object.keys(data).length > 0 &&
+        data.map((alumno) => {
             if(!alumno){
                 return <div>Loading..</div>
               } else {
@@ -43,4 +39,4 @@ export const DataAlumnosPanelList = ({trashoption,handleDeleteProperty,data}) =>
         })}
     </>
   )}
-}
+

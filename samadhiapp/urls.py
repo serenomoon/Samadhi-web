@@ -18,13 +18,13 @@ router.register(r'alumnosdata', views.AlumnosListViewSet, basename='alumnosdata'
 urlpatterns = [
     path('', views.UserView.as_view()),
     path('', views.ClasesView.as_view()),
-    # path('', views.NoticiasView.as_view()),
+    path('', views.NoticiasView.as_view()),
     path('', views.FacilitadoresView.as_view()),
     path('', views.AlumnosView.as_view()),
     path('api/', include(router.urls)),
     re_path(r'^(?:.*)/?$', views.ClasesView.as_view()),
     re_path(r'^(?:.*)/?$', views.UserView.as_view()),
-    re_path('', views.NoticiasView.as_view()),
+    re_path(r'^(?:.*)/?$', views.NoticiasView.as_view()),
     re_path(r'^(?:.*)/?$', views.FacilitadoresView.as_view()),
     re_path(r'^(?:.*)/?$', views.AlumnosView.as_view()),
 

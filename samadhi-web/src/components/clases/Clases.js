@@ -27,12 +27,6 @@ export const Clases = () => {
       consultaAPI();
     },[]);
 
-  if (Object.keys(respuestaAPI).length === 0) {
-
-    return <img src={ yogaImages(`./logo.svg`) } className="loading__loading img-fluid animate__animated animate__flash" alt='logo'/>;
-
-  } else {
-
 
   return (
     <>
@@ -47,7 +41,8 @@ export const Clases = () => {
           </div>
           <div className='row'>
 
-            {respuestaAPI.map(info=>{
+          {Object.keys(respuestaAPI).length > 0 &&
+            respuestaAPI.map(info=>{
               return(
                   <div className='col-4 clases__col animate__animated animate__fadeIn'>
                       <div className="card clases__card" style={{width: '18rem'}}>
@@ -70,4 +65,4 @@ export const Clases = () => {
       <Foot />
     </>
   )}
-}
+

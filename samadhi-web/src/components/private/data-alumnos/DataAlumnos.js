@@ -65,12 +65,13 @@ export const DataAlumnos = () => {
                     <button className={ 'btn btn-green' + (trashoption === true ? ' btn-red' : '') }  onClick={()=> setTrashoption(!trashoption)}>ELIMINAR</button>
                 </Link>
             </div>
-    
-            <DataAlumnosPanelList
-                data={respuestaAPI} 
-                handleDeleteProperty={handleDeleteProperty}
-                trashoption={trashoption}
-            />
+
+            {Object.keys(respuestaAPI).length > 0 &&
+              <DataAlumnosPanelList
+                  data={respuestaAPI} 
+                  handleDeleteProperty={handleDeleteProperty}
+                  trashoption={trashoption}
+              />}
   
     
           </div>

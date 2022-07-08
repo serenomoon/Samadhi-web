@@ -44,11 +44,6 @@ export const DataClases = () => {
     .catch(err => console.log(err))
   }
 
-  if (Object.keys(respuestaAPI).length === 0) {
-
-    return <img src={ yogaImages(`./logo.svg`) } className="loading__loading img-fluid animate__animated animate__flash" alt='logo'/>;
-
-  } else {
 
   return (
     <>
@@ -70,8 +65,8 @@ export const DataClases = () => {
         </div>
 
         <div className='row'>
-
-            { respuestaAPI.map( clase => {
+        {Object.keys(respuestaAPI).length > 0 &&
+             respuestaAPI.map( clase => {
               if(!clase){
                 return <div>Loading..</div>
                 } else {
@@ -93,5 +88,5 @@ export const DataClases = () => {
         </div>
       </div>
     </>
-  )}
+  )
 }

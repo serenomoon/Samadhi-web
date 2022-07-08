@@ -45,11 +45,6 @@ export const DataFacilitadores = () => {
     .catch(err => console.log(err))
   }
 
-  if (Object.keys(respuestaAPI).length === 0) {
-
-    return <img src={ yogaImages(`./logo.svg`) } className="loading__loading img-fluid animate__animated animate__flash" alt='logo'/>;
-
-  } else {
 
   return (
     <>
@@ -70,8 +65,8 @@ export const DataFacilitadores = () => {
           </Link>
         </div>
 
-       
-        {respuestaAPI.map((facilitador) => {
+        {Object.keys(respuestaAPI).length > 0 &&
+        respuestaAPI.map((facilitador) => {
           if(!facilitador){
             return <div>Loading..</div>
           } else {
@@ -104,4 +99,3 @@ export const DataFacilitadores = () => {
       </div>
     </>
   )}
-}

@@ -28,11 +28,6 @@ export const Facilitadores = () => {
       consultaAPI();
     },[]);
 
-  if (Object.keys(respuestaAPI).length === 0) {
-
-    return <img src={ yogaImages(`./logo.svg`) } className="loading__loading img-fluid animate__animated animate__flash" alt='logo'/>;
-
-  } else {
 
   return (
     <>
@@ -48,7 +43,9 @@ export const Facilitadores = () => {
 
           <div className='about__tipo-clase'>
           
-            {respuestaAPI.map((facilitador) => {
+
+          {Object.keys(respuestaAPI).length > 0 &&
+            respuestaAPI.map((facilitador) => {
             if(!facilitador){
               return <div>Loading..</div>
             } else {
@@ -78,5 +75,5 @@ export const Facilitadores = () => {
       <Foot />
     </>
   )}
-}
+
 

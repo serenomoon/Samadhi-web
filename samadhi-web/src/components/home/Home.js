@@ -33,11 +33,6 @@ export const Home = () => {
     consultaAPI();
   },[]);  
 
-  if (Object.keys(respuestaAPI).length === 0) {
-
-    return <img src={ yogaImages(`./logo.svg`) } className="loading__loading img-fluid animate__animated animate__flash" alt='logo'/>;
-
-  } else {
 
   return (
     <div>
@@ -61,7 +56,9 @@ export const Home = () => {
 
         <ClasesCall />
 
-        {respuestaAPI.map(noticia => {
+        {Object.keys(respuestaAPI).length > 0 &&
+        
+        respuestaAPI.map(noticia => {
           if(!noticia){
             return <div>Cargando...</div>
           } else {
@@ -74,10 +71,14 @@ export const Home = () => {
               uploadimg = {noticia.uploadimg}
             />
             )}
-        })}
+        })
+
+        }
+
+        
 
         <Foot />
 
     </div>
   )
-}}
+}

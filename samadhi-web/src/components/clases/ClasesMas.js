@@ -22,7 +22,7 @@ export const ClasesMas = () => {
     <>
       <HomeNav />
       <div className='container clasesmas__new animate__animated animate__fadeIn'>
-          <img src={ yogaImages(`./clasesexample1.jpg`) } className='cardnews__img' alt='news'/>
+          <img src={data.attributes.uploadimg} className='cardnews__img' alt='news'/>
           <div className='clasesmas__text'>
             <h1>{data.attributes.title}</h1>
             <p>
